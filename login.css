@@ -1,0 +1,47 @@
+body{
+    background-image: url(hospital.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.login{
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    display: block;
+    border: 1px solid;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 30px;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.login h1{
+    text-align: center;
+    font-family: Georgia, serif;
+}
+.login button{
+ border-radius: 15px;
+ color: yellow;
+ padding: 10px;
+ background-color: black;
+ cursor: pointer;
+ animation-name: slideleft;
+ animation-duration: 0.5s;
+ animation-iteration-count: 1;
+ animation-timing-function: cubic-bezier(0.89,-0.94, 0.09, 1.51);
+}
+.login button:hover{
+    background-color: brown;
+     
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 30px blueviolet;}
+}
+@keyframes slideleft{
+    to{transform: translateX(100%);}}
